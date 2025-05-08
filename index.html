@@ -1,5 +1,25 @@
-<div style="text-align: center; margin-top: 20px;">
+<!-- <div style="text-align: center; margin-top: 20px;">
     <a href="f.apk" download>
       <button style="padding: 10px 20px; font-size: 16px;">下载 APK 文件</button>
     </a>
-  </div>
+  </div> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>获取设备分辨率</title>
+</head>
+<body>
+    <h1>设备分辨率</h1>
+    <p>屏幕分辨率: <span id="screenResolution"></span></p>
+    <script>
+        // 获取屏幕分辨率
+        const screenWidth = window.screen.width;
+        const screenHeight = window.screen.height;
+        document.getElementById('screenResolution').textContent = `${screenWidth}x${screenHeight}`;
+        
+        // 打印到控制台
+        console.log(`屏幕分辨率: ${screenWidth}x${screenHeight}`);
+    </script>
+</body>
+</html>
